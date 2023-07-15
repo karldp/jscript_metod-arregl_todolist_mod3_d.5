@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>To do List</title>
+</head>
+<body>
+    <section class="container">
+        <div class="title-section">
+            <div class="title">
+                <h1>My daily Tasks</h1>
+            </div>
+        </div>
+        <div class="input-section">
+            <div class="input-title">
+                <p>New Tasks</p>
+            </div>
+            <div class="input">
+                <input type="text" id="newInput" placeholder=" Write a new task for the list!">
+                <button id="buttn">Add</button>
+            </div>
+        </div>
+        <div class="tasksList-section">
+            <div class="tasks-info">
+                <p>TOTAL: <span id="total">0</span></p> <!-- total tasks added-->
+                <p>DONE: <span class="done">0</span></p> <!-- total tasks done -->
+            </div>
+            <div class="tasks-arrangement">
+                <table> <!-- organize tasks in a table as ALBA said in the class-->
+                    <thead class="tasks-titles"> <!-- tasks titles-->
+                        <th>ID</th>  <!-- ID TITLE-->
+                        <th>TASK</th> <!-- TASKS TITLE-->
+                    </thead>
+                    <tbody class="tasksList"></tbody> <!-- tasks list to add template-->
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
